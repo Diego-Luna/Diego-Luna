@@ -5,23 +5,22 @@ name: Node.js CI
 
 on:
   schedule:
-    - cron: "*/2 * * * *"
+    - cron: "* * * * *"
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
       with:
-        node-version: '12'
+        node-version: '14'
     - run: npm install
     - run: npm run update-readme
     - run: |
         git config user.name Diego-Luna
         git config user.email diegofcolunalopez@gmail.com
         git add README.md
-        git commit -m "Update readme with lates info"
+        git commit -m "[bot] Update README with latest info"
         git push origin master
