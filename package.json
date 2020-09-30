@@ -1,0 +1,24 @@
+{
+  "name": "diego-luna",
+  "version": "1.0.0",
+  "description": "![Hi 👋, I'm Diego Francisco Luna Lopez",
+  "main": "index.js",
+  "scripts": {
+    "update-readme": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diego-Luna/Diego-Luna.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Diego-Luna/Diego-Luna/issues"
+  },
+  "homepage": "https://github.com/Diego-Luna/Diego-Luna#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "rss-parser": "^3.9.0"
+  }
+}
