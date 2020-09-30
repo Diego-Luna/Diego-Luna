@@ -26,4 +26,4 @@ jobs:
         git config user.email diegofcolunalopez@gmail.com
         git add README.md
         git commit -m "Update readme with lates info"
-        git push
+        git push origin master
